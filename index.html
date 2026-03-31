@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image Converter Tool</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Image Converter</h1>
+  <p>Fast • Free • Secure</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<!-- Drag & Drop -->
+<div id="drop-area">
+  <p>📁 Drag & Drop Image Here</p>
+  <p>or</p>
+  <input type="file" id="upload" accept="image/*">
+</div>
+
+<p id="file-name"></p>
+
+<!-- Format -->
+<select id="format">
+  <option value="image/jpeg">JPEG / JPG</option>
+  <option value="image/png">PNG</option>
+  <option value="image/gif">GIF</option>
+  <option value="image/bmp">BMP</option>
+  <option value="image/tiff">TIFF / TIF</option>
+  <option value="image/webp">WEBP</option>
+  <option value="image/heic">HEIF / HEIC</option>
+  <option value="image/raw">RAW</option>
+</select>
+
+<button onclick="convertImage()">Convert</button>
+
+<a id="download"></a>
+
+<p class="note">
+Supported: PNG, JPG, WEBP
+</p>
+
+</div>
+
+<!-- Ad Space -->
+<div class="ad-box">Ad Space</div>
+
+</div>
+
+<footer>
+  <a href="privacy.html">Privacy</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
